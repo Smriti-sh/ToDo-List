@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>T0DO List</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" text="text/css" href="style.css" />
+
+    <!-- boxicons  link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remix icons css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header design -->
+    <div class="container">
+      <div class="todo-app">
+        <h1>ToDo-List</h1>
+        <!-- <div class="row">
+          <input type="text" placeholder="Buy Grocery..." id="task" />
+          <button>Add</button>
+        </div> -->
+        <form action="">
+          <input type="text" placeholder="&#9997; Add item..." id="input-box" />
+          <button type="submit" class="btn" value="Add" id="add-Task">
+            Add
+          </button>
+          <!-- <button class="btn" onclick="addTask">Add</button> -->
+        </form>
+
+        <ul id="task-list">
+          <!-- <li class="checked">task 1</li>
+          <li>task 2</li>
+          <li>task 3</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
