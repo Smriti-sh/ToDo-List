@@ -55,6 +55,11 @@
   color: rgb(97, 63, 33);
   font-weight: 0;
   margin-bottom: 40px;
+  color: white;
+  /* color: rgb(105, 72, 32); */
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 /* .row {
   display: flex;
@@ -115,6 +120,7 @@ li {
   user-select: none;
   cursor: pointer;
   position: relative;
+  border-bottom: 1px solid black;
 }
 
 li:hover {

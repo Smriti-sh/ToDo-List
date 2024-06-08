@@ -5,7 +5,6 @@ const addBtn = document.getElementById("add-Task");
 addBtn.addEventListener("click", function (event) {
   if (inputBox.value.trim() === "") {
     alert("You must first enter something");
-    return false;
   } else {
     var li = document.createElement("li");
     li.innerHTML = inputBox.value;
@@ -25,16 +24,19 @@ taskList.addEventListener(
   function (e) {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("checked");
-      e.preventDefault();
+      saveData();
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
-      e.preventDefault();
+      saveData();
     }
-    e.preventDefault();
-  }
-  // false
+  },
+  false
 );
 
 function saveData() {
   localStorage.setItem("data", taskList.innerHTML);
 }
+function showTask() {
+  taskList.innerHTML = localStorage.getItem("data");
+}
+showTask();
