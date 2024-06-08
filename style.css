@@ -103,7 +103,7 @@
   /* transform: translateY(-10px); */
   /* border: 2px solid var(--text-color); */
   /* background: transparent; */
-  box-shadow: 5px 5px 5px rgb(111, 110, 110);
+  box-shadow: 4px 4px 4px rgb(111, 110, 110);
   color: var(--text-color);
 }
 
