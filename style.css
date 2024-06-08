@@ -57,9 +57,9 @@
   margin-bottom: 40px;
   color: white;
   /* color: rgb(105, 72, 32); */
-  font-size: 40px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  font-size: 35px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(78, 77, 77);
 }
 /* .row {
   display: flex;
@@ -103,7 +103,7 @@
   /* transform: translateY(-10px); */
   /* border: 2px solid var(--text-color); */
   /* background: transparent; */
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px rgb(111, 110, 110);
   color: var(--text-color);
 }
 
@@ -120,11 +120,12 @@ li {
   user-select: none;
   cursor: pointer;
   position: relative;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+  border-radius: 30px;
 }
 
 li:hover {
-  background: rgb(225, 221, 221);
+  background: rgb(214, 213, 213);
 }
 
 .checked {
@@ -151,7 +152,7 @@ li::before {
 
 span {
   position: absolute;
-  top: 5px;
+  top: 2px;
   right: 12px;
   width: 40px;
   height: 40px;
